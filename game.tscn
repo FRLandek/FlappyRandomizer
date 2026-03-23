@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://fuuowte4jrqg"]
+
+[ext_resource type="PackedScene" uid="uid://dobc3f1ldartg" path="res://bird.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://bnc4h16dbrvqv" path="res://pipes.tscn" id="2_e2o6t"]
+
+[node name="Game" type="Node2D" unique_id=574554394]
+
+[node name="Bird" parent="." unique_id=465336241 instance=ExtResource("1_80nbo")]
+position = Vector2(111, 118)
+
+[node name="Pipes1" parent="." unique_id=1889958439 instance=ExtResource("2_e2o6t")]
+position = Vector2(601, -40)
+
+[node name="Pipes2" parent="." unique_id=1053792969 instance=ExtResource("2_e2o6t")]
+position = Vector2(950, -37)

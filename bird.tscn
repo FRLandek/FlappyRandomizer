@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dobc3f1ldartg"]
+
+[ext_resource type="SpriteFrames" uid="uid://7k1gnbvxdn8b" path="res://yellow.tres" id="1_g5k2s"]
+[ext_resource type="Script" uid="uid://cplhg5hviktuu" path="res://control.gd" id="2_crnqq"]
+
+[node name="Bird" type="CharacterBody2D" unique_id=465336241]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=488960502]
+scale = Vector2(4.3, 4.3)
+sprite_frames = ExtResource("1_g5k2s")
+animation = &"idle"
+frame_progress = 0.70282745
+script = ExtResource("2_crnqq")

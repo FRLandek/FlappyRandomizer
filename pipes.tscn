@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bnc4h16dbrvqv"]
+
+[ext_resource type="Script" uid="uid://cj5jkk6t23su5" path="res://pipes.gd" id="1_og227"]
+[ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="1_r1kwc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r1kwc"]
+size = Vector2(19, 156.75)
+
+[node name="Pipes" type="Node2D" unique_id=1889958439]
+script = ExtResource("1_og227")
+
+[node name="TopPipe" type="StaticBody2D" parent="." unique_id=378619390]
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="TopPipe" unique_id=402092213]
+texture = ExtResource("1_r1kwc")
+region_enabled = true
+region_rect = Rect2(55.26, 322.481, 27.283, 161.158)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe" unique_id=1918497353]
+position = Vector2(0, -1.375)
+shape = SubResource("RectangleShape2D_r1kwc")
+
+[node name="BottomPipe" type="StaticBody2D" parent="." unique_id=261695105]
+position = Vector2(0, 170)
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="BottomPipe" unique_id=89321487]
+position = Vector2(0, 170)
+texture = ExtResource("1_r1kwc")
+region_enabled = true
+region_rect = Rect2(83.81255, 322.481, 26.832146, 161.15799)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomPipe" unique_id=675601465]
+position = Vector2(0, 170)
+shape = SubResource("RectangleShape2D_r1kwc")
