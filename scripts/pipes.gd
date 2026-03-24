@@ -9,9 +9,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.x -= 1.5
+	position.x -= 1.2
 	
 	if position.x < -100:
 		position.x = 600
-		position.y = rng.randi_range(-250, 250)
+		position.y = rng.randi_range(-225, 50)
 		

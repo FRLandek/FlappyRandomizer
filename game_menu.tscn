@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c738vnyb7ypv3"]
+
+[ext_resource type="FontFile" uid="uid://d1q5y1emjk0vd" path="res://flappy-font.ttf" id="1_jowre"]
+
+[node name="GameMenu" type="Node2D" unique_id=500707529]
+
+[node name="Label" type="Label" parent="." unique_id=552386824]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_jowre")
+theme_override_font_sizes/font_size = 100
+text = "0"
