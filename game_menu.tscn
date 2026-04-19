@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://c738vnyb7ypv3"]
+
+[ext_resource type="FontFile" uid="uid://d1q5y1emjk0vd" path="res://flappy-font.ttf" id="1_jowre"]
+[ext_resource type="Script" uid="uid://de8m6gs23wr4o" path="res://game_menu.gd" id="1_rjxss"]
+[ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="3_jprcw"]
+
+[node name="GameMenu" type="Node2D" unique_id=500707529]
+script = ExtResource("1_rjxss")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=552386824]
+offset_top = 80.0
+offset_right = 57.0
+offset_bottom = 181.0
+scale = Vector2(0.7599972, 0.7200002)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("1_jowre")
+theme_override_font_sizes/font_size = 100
+text = "0"
+
+[node name="HighScoreLabel" type="Label" parent="." unique_id=1179698129]
+offset_left = -281.0
+offset_top = 4.0
+offset_right = 490.0
+offset_bottom = 105.0
+scale = Vector2(0.7599972, 0.7200002)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("1_jowre")
+theme_override_font_sizes/font_size = 40
+text = "High Score: 999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AlertLabel" type="Label" parent="." unique_id=2139905443]
+z_index = 1
+offset_left = -343.0
+offset_top = 182.0
+offset_right = 643.0
+offset_bottom = 283.0
+scale = Vector2(0.7599972, 0.7200002)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("1_jowre")
+theme_override_font_sizes/font_size = 50
+text = "Change Background!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Deco" type="Node2D" parent="." unique_id=1110551930]
+position = Vector2(26, 216)
+
+[node name="Logo" type="Sprite2D" parent="Deco" unique_id=1859309986]
+position = Vector2(0, 1)
+scale = Vector2(4, 4)
+texture = ExtResource("3_jprcw")
+region_enabled = true
+region_rect = Rect2(350.08987, 89.54544, 90.838745, 25.45456)
+
+[node name="Instructions" type="Sprite2D" parent="Deco" unique_id=357033909]
+position = Vector2(-6, 266)
+scale = Vector2(4, 4)
+texture = ExtResource("3_jprcw")
+region_enabled = true
+region_rect = Rect2(292, 91, 57, 49)
+
+[node name="Label" type="Label" parent="Deco" unique_id=1653974755]
+offset_left = -143.0
+offset_top = 58.0
+offset_right = 154.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.32941177, 0.21960784, 0.2784314, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_jowre")
+theme_override_font_sizes/font_size = 52
+text = "Randomizer"

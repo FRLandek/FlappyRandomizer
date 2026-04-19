@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bnc4h16dbrvqv"]
+
+[ext_resource type="Script" uid="uid://cj5jkk6t23su5" path="res://scripts/pipes.gd" id="1_og227"]
+[ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="1_r1kwc"]
+[ext_resource type="Script" uid="uid://di10ke2al2l21" path="res://score_zone.gd" id="3_l4tgv"]
+[ext_resource type="AudioStream" uid="uid://cg3r4ux3k8fkh" path="res://sounds/sfx_point.wav" id="4_nq3k0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r1kwc"]
+size = Vector2(21.304409, 158.33534)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nq3k0"]
+size = Vector2(8, 123)
+
+[node name="Pipes" type="Node2D" unique_id=1889958439]
+script = ExtResource("1_og227")
+
+[node name="TopPipe" type="StaticBody2D" parent="." unique_id=378619390]
+scale = Vector2(3.2387667, 3.6102703)
+
+[node name="Sprite2D" type="Sprite2D" parent="TopPipe" unique_id=402092213]
+texture = ExtResource("1_r1kwc")
+region_enabled = true
+region_rect = Rect2(56, 323, 26, 160)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe" unique_id=1918497353]
+position = Vector2(0.15437932, -0.40426993)
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_r1kwc")
+
+[node name="BottomPipe" type="StaticBody2D" parent="." unique_id=261695105]
+position = Vector2(0, 115)
+scale = Vector2(3.2387667, 3.6102703)
+
+[node name="Sprite2D" type="Sprite2D" parent="BottomPipe" unique_id=89321487]
+position = Vector2(0, 170)
+texture = ExtResource("1_r1kwc")
+region_enabled = true
+region_rect = Rect2(84, 323, 26, 160)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomPipe" unique_id=675601465]
+position = Vector2(0, 170.17838)
+scale = Vector2(1.0040052, 1.0020059)
+shape = SubResource("RectangleShape2D_r1kwc")
+
+[node name="ScoreZone" type="Area2D" parent="." unique_id=2854773]
+position = Vector2(0, 366)
+script = ExtResource("3_l4tgv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreZone" unique_id=1495523634]
+position = Vector2(0, -3.5)
+scale = Vector2(6.04, 1)
+shape = SubResource("RectangleShape2D_nq3k0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ScoreZone" unique_id=1173984278]
+stream = ExtResource("4_nq3k0")
+
+[connection signal="body_entered" from="ScoreZone" to="ScoreZone" method="_on_body_entered"]
+[connection signal="body_exited" from="ScoreZone" to="ScoreZone" method="_on_body_exited"]
