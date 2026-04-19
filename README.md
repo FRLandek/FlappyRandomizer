@@ -1,7 +1,7 @@
 # FlappyRandomizer  
-** Link: https://frlandek.github.io/Games/flappyrandomizer/FlappyRandomizer.html  
+** Link: https://frlandek.github.io/Games/flappyrandomizer/FlappyRandomizer.html **  
 
-** Flappy Bird, but randomized!  
+** Flappy Bird, but randomized! **  
 Things that are random:  
 1. Background Type  
 2. Pipe Color
