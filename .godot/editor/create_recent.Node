@@ -1,0 +1,12 @@
+RichTextLabel
+AudioStreamPlayer2D
+Area2D
+CollisionShape2D
+Label
+Node2D
+Sprite2D
+StaticBody2D
+TextureButton
+TextureRect
+AnimatedSprite2D
+CharacterBody2D
