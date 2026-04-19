@@ -44,3 +44,6 @@ scale = Vector2(2.8816593, 3.304515)
 [node name="GameMenu" parent="." unique_id=500707529 instance=ExtResource("6_ryrav")]
 z_index = 4
 position = Vector2(206, 56)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=650332085]
+position = Vector2(239, 430)

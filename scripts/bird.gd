@@ -61,9 +61,10 @@ func die() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	
-	var collision = move_and_slide()
-	
 	if moving:
+		vertSpeed -= fallingConstant * delta
+		velocity.y = vertSpeed
+		var collision = move_and_slide()
 		if alive:
 			if Input.is_action_just_pressed("jump"):
 				vertSpeed = jumpSpeed
@@ -72,8 +73,6 @@ func _physics_process(delta: float) -> void:
 			if collision:
 				die()
 				
-		vertSpeed -= fallingConstant * delta
-		velocity.y = vertSpeed
 	else:
 		if Input.is_action_just_pressed("jump"):
 			moving = true

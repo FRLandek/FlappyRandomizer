@@ -17,6 +17,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if moving:
-		position.x -= 1.2
+		position.x -= 180 * delta
 		if position.x < -240:
 			position.x = 720
