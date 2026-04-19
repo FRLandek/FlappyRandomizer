@@ -13,7 +13,7 @@ func changeBG():
 func weirdBG():
 	if !is_inside_tree():
 		return
-	
+		
 	if bg == 0:
 		var x = 1
 		while x < 73:

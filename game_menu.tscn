@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c738vnyb7ypv3"]
 
 [ext_resource type="FontFile" uid="uid://d1q5y1emjk0vd" path="res://flappy-font.ttf" id="1_jowre"]
-[ext_resource type="Script" uid="uid://de8m6gs23wr4o" path="res://game_menu.gd" id="1_rjxss"]
+[ext_resource type="Script" uid="uid://de8m6gs23wr4o" path="res://scripts/game_menu.gd" id="1_rjxss"]
 [ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="3_jprcw"]
 
 [node name="GameMenu" type="Node2D" unique_id=500707529]

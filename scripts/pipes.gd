@@ -48,6 +48,5 @@ func _process(delta: float) -> void:
 		
 		if position.x < -70:
 			position.x = 600
-			#position.y = rng.randi_range(-225, 50)
-			position.y = rng.randi_range(-220,170)
+			position.y = rng.randi_range(150, -210)
 		

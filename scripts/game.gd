@@ -37,7 +37,7 @@ func startGame():
 func random():
 	print("random")
 	var r = rng.randi_range(1,6)
-	#var r = 6
+
 	if r == 1: 
 		alert.emit("Change Background!")
 		changeBG.emit()
@@ -62,10 +62,7 @@ func random():
 func scored():
 	score += 1
 	updateScore.emit(score)
-	#if score % 3 == 0:
 	random()
-	
-	
 			
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

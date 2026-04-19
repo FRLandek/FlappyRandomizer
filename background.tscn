@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://jgs7x7siim6v"]
 
-[ext_resource type="Script" uid="uid://c5846l2ft0j82" path="res://background.gd" id="1_i7s6n"]
+[ext_resource type="Script" uid="uid://c5846l2ft0j82" path="res://scripts/background.gd" id="1_i7s6n"]
 [ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="1_oabld"]
 
 [node name="Background" type="Sprite2D" unique_id=1508267054]

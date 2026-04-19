@@ -27,11 +27,11 @@ func alert(text):
 	
 	alertLabel.text = text
 	alertLabel.visible = true
-	for i in range(0, 7):
-		alertLabel.add_theme_font_size_override("font_size", alertLabel.get_theme_font_size("font_size") + 5)
+	for i in range(0, 10):
+		alertLabel.add_theme_font_size_override("font_size", alertLabel.get_theme_font_size("font_size") + 2)
 		await get_tree().create_timer(.02).timeout
-	for i in range(0, 7):
-		alertLabel.add_theme_font_size_override("font_size", alertLabel.get_theme_font_size("font_size") - 5)
+	for i in range(0, 10):
+		alertLabel.add_theme_font_size_override("font_size", alertLabel.get_theme_font_size("font_size") - 2)
 		await get_tree().create_timer(.02).timeout
 	alertLabel.visible = false
 	
