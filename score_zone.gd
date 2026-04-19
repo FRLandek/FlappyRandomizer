@@ -2,6 +2,8 @@ extends Area2D
 
 @onready var scoreSound = $"AudioStreamPlayer2D"
 
+signal scored
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -12,10 +14,10 @@ func _process(delta: float) -> void:
 	pass
 
 
-
-
-
-
 func _on_body_entered(body: Node2D) -> void:
 	print(body)
+	scored.emit()
 	scoreSound.play()
+	
+
+	

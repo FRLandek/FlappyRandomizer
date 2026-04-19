@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dobc3f1ldartg"]
+
+[ext_resource type="Script" uid="uid://bdniooo4whioy" path="res://bird.gd" id="1_cchwj"]
+[ext_resource type="SpriteFrames" uid="uid://7k1gnbvxdn8b" path="res://yellow.tres" id="1_g5k2s"]
+[ext_resource type="AudioStream" uid="uid://cgg1d67pku3u6" path="res://sounds/sfx_wing.wav" id="3_j88tq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j88tq"]
+size = Vector2(31.631283, 99.83893)
+
+[node name="Bird" type="CharacterBody2D" unique_id=465336241]
+script = ExtResource("1_cchwj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=488960502]
+scale = Vector2(3.5, 3.5)
+sprite_frames = ExtResource("1_g5k2s")
+animation = &"idle"
+frame_progress = 0.70282745
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=944616126]
+stream = ExtResource("3_j88tq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=479219931]
+position = Vector2(-9.5, -1.0000006)
+rotation = -3.1415925
+scale = Vector2(1.0432711, -0.26041946)
+shape = SubResource("RectangleShape2D_j88tq")

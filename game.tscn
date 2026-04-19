@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://fuuowte4jrqg"]
 
 [ext_resource type="PackedScene" uid="uid://dobc3f1ldartg" path="res://bird.tscn" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://0hpvhdat7hs6" path="res://game.gd" id="1_eow3j"]
 [ext_resource type="PackedScene" uid="uid://bnc4h16dbrvqv" path="res://pipes.tscn" id="2_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://cnbb7b107lncj" path="res://mainmenu.tscn" id="3_feb5d"]
 [ext_resource type="PackedScene" uid="uid://jgs7x7siim6v" path="res://background.tscn" id="4_fc0e3"]
@@ -8,10 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://c738vnyb7ypv3" path="res://game_menu.tscn" id="6_ryrav"]
 
 [node name="Game" type="Node2D" unique_id=574554394]
+script = ExtResource("1_eow3j")
 
 [node name="Bird" parent="." unique_id=465336241 instance=ExtResource("1_80nbo")]
 z_index = 2
-position = Vector2(111, 118)
+position = Vector2(111, 426.5)
 
 [node name="Pipes1" parent="." unique_id=1889958439 instance=ExtResource("2_e2o6t")]
 z_index = 2
@@ -19,7 +21,7 @@ position = Vector2(601, -40)
 
 [node name="Pipes2" parent="." unique_id=1053792969 instance=ExtResource("2_e2o6t")]
 z_index = 2
-position = Vector2(950, -37)
+position = Vector2(916, -36)
 
 [node name="MainMenu" parent="." unique_id=1796349120 instance=ExtResource("3_feb5d")]
 position = Vector2(232, 160)

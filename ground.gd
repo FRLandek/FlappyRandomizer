@@ -1,5 +1,13 @@
 extends StaticBody2D
 
+var moving = true
+
+func stop():
+	moving = false
+	
+func reset():
+	moving = true
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,7 +16,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.x -= 1.2
-	
-	if position.x < -240:
-		position.x = 720
+	if moving:
+		position.x -= 1.2
+		if position.x < -240:
+			position.x = 720
