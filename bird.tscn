@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dobc3f1ldartg"]
 
 [ext_resource type="Script" uid="uid://bdniooo4whioy" path="res://bird.gd" id="1_cchwj"]
-[ext_resource type="SpriteFrames" uid="uid://7k1gnbvxdn8b" path="res://yellow.tres" id="1_g5k2s"]
+[ext_resource type="SpriteFrames" uid="uid://7k1gnbvxdn8b" path="res://animations/yellow.tres" id="1_g5k2s"]
 [ext_resource type="AudioStream" uid="uid://cgg1d67pku3u6" path="res://sounds/sfx_wing.wav" id="3_j88tq"]
 [ext_resource type="AudioStream" uid="uid://b0tb70gptpoim" path="res://sounds/sfx_hit.wav" id="4_6ljjq"]
 [ext_resource type="AudioStream" uid="uid://ey1doerdksjj" path="res://sounds/sfx_die.wav" id="5_axl6x"]
@@ -16,8 +16,6 @@ script = ExtResource("1_cchwj")
 scale = Vector2(3.5, 3.5)
 sprite_frames = ExtResource("1_g5k2s")
 animation = &"idle"
-frame = 3
-frame_progress = 0.2597623
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=944616126]
 stream = ExtResource("3_j88tq")

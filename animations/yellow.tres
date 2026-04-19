@@ -1,17 +1,17 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://7k1gnbvxdn8b"]
 
-[ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="1_3s47b"]
+[ext_resource type="Texture2D" uid="uid://duk4c21outqn" path="res://spritesheet.png" id="1_gw1xa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlwu5"]
-atlas = ExtResource("1_3s47b")
+atlas = ExtResource("1_gw1xa")
 region = Rect2(0, 485, 28, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5wige"]
-atlas = ExtResource("1_3s47b")
+atlas = ExtResource("1_gw1xa")
 region = Rect2(28, 485, 28, 25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xf4oe"]
-atlas = ExtResource("1_3s47b")
+atlas = ExtResource("1_gw1xa")
 region = Rect2(56, 485, 28, 25)
 
 [resource]

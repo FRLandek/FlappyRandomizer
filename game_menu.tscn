@@ -21,12 +21,19 @@ text = "0"
 [node name="Deco" type="Node2D" parent="." unique_id=1110551930]
 position = Vector2(26, 216)
 
-[node name="Sprite2D" type="Sprite2D" parent="Deco" unique_id=1859309986]
+[node name="Logo" type="Sprite2D" parent="Deco" unique_id=1859309986]
 position = Vector2(0, 1)
 scale = Vector2(4, 4)
 texture = ExtResource("3_jprcw")
 region_enabled = true
 region_rect = Rect2(350.08987, 89.54544, 90.838745, 25.45456)
+
+[node name="Instructions" type="Sprite2D" parent="Deco" unique_id=357033909]
+position = Vector2(-6, 266)
+scale = Vector2(4, 4)
+texture = ExtResource("3_jprcw")
+region_enabled = true
+region_rect = Rect2(292, 91, 57, 49)
 
 [node name="Label" type="Label" parent="Deco" unique_id=1653974755]
 offset_left = -143.0

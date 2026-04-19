@@ -13,8 +13,12 @@ func start():
 
 func addScore(score):
 	scoreLabel.text = str(score)
+
+func alert(text):
+	pass
 	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_parent().updateScore.connect(addScore)
+	get_parent().alert.connect(alert)
 	
