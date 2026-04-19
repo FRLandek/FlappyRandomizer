@@ -11,6 +11,8 @@ func changeBG():
 		bg = 0
 		
 func weirdBG():
+	if !is_inside_tree():
+		return
 	
 	if bg == 0:
 		var x = 1

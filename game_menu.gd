@@ -17,7 +17,14 @@ func start():
 func addScore(score):
 	scoreLabel.text = str(score)
 
+func updateHighScoreLabel(score):
+	highScoreLabel.text = "High Score: " + str(score)
+
 func alert(text):
+	if !is_inside_tree():
+		return
+
+	
 	alertLabel.text = text
 	alertLabel.visible = true
 	for i in range(0, 7):
@@ -33,4 +40,5 @@ func _ready() -> void:
 	alertLabel.visible = false
 	get_parent().updateScore.connect(addScore)
 	get_parent().alert.connect(alert)
+	get_parent().highScoreLabel.connect(updateHighScoreLabel)
 	
