@@ -13,3 +13,5 @@ Future Updates:
 1. Scroll Speed Randomizer
 2. Pipe Opening Randomizer
 3. Bird Rotation
+4. Fix gap in ground pieces
+5. Make it so you can't fly over pipes
